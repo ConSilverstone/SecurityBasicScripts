@@ -1,0 +1,5 @@
+Can be used to check for root owned files on a linux system, such as a program. That can be run as a regular user.
+
+find / -type f -user root -perm -u=s 2> /dev/null
+
+Follow this up with a search for the program risk on https://gtfobins.github.io/
